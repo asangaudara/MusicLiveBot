@@ -13,11 +13,11 @@ export const playHandler = Composer.command('play', async ctx => {
     const text = ctx.message.text.slice(commandEntity.length + 1);
 
     if (!text) {
-        await ctx.reply('You need to specify a YouTube URL.');
+        await ctx.reply('You Need YouTube Video URL.');
         return;
     }
 
     const index = await addToQueue(chat, text);
 
-    await ctx.reply(index === 0 ? 'Playing.' : `Queued at position ${index}.`);
+    await ctx.reply(index === 0 ? 'Playing Your Music Pleas Check Voice Chat @Asanga_Udara 👨‍💻' : `Queued at position ${index}.`);
 });
